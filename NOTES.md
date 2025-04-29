@@ -3,16 +3,18 @@
 ## AWS Setup
 1. Create a VPC (used the default one)
 2. EC2 > Create a Security group with the following inbound rules
+
 | Protocol | Port(s)        | Purpose                                                                 | Notes                                             |
 |----------|----------------|-------------------------------------------------------------------------|---------------------------------------------------|
-| TCP      | **22**         | SSH access to EC2 instances                                             | Required for manual access and debugging          |
-| TCP      | **80**         | HTTP                                                                    | For serving web applications                      |
-| TCP      | **443**        | HTTPS                                                                   | Secure traffic for apps/services                  |
-| TCP      | **6443**       | Kubernetes API Server                                                   | Required to set up the Kubernetes master node     |
-| TCP      | **30000–32767**| Kubernetes NodePort range                                               | Used for exposing services via NodePort           |
-| TCP      | **3000–10000** | Custom application deployment range                                     | For deploying internal apps or services           |
-| TCP      | **465**        | SMTPS                                                                   | For Jenkins email notifications via Gmail         |
-| TCP      | **25**         | SMTP                                                                    | Standard mail (not used in this project)          |
+| TCP      | 22             | SSH access to EC2 instances                                             | Required for manual access and debugging          |
+| TCP      | 80             | HTTP                                                                    | For serving web applications                      |
+| TCP      | 443            | HTTPS                                                                   | Secure traffic for apps/services                  |
+| TCP      | 6443           | Kubernetes API Server                                                   | Required to set up the Kubernetes master node     |
+| TCP      | 30000-32767    | Kubernetes NodePort range                                               | Used for exposing services via NodePort           |
+| TCP      | 3000-10000     | Custom application deployment range                                     | For deploying internal apps or services           |
+| TCP      | 465            | SMTPS                                                                   | For Jenkins email notifications via Gmail         |
+| TCP      | 25             | SMTP                                                                    | Standard mail (not used in this project)          |
+
 
 3. Launch EC2 instances
   ### EC2 Instance Setup
