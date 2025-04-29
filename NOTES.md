@@ -38,3 +38,10 @@
   > The tutorial initially recommended installing **MobaXterm** for terminal access, but it only works on Windows.  
   > Since I'm using macOS, I'm using the built-in **Terminal** instead.  
   > To differentiate between the master and worker nodes, I've renamed the terminal sessions and customized the colors for easy identification.
+
+```bash
+ssh -i "your-key.pem" ubuntu@<public-ip>
+```
+  - copy the <public-ip> from the aws instance properties
+
+
