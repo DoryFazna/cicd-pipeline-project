@@ -44,4 +44,9 @@ ssh -i "your-key.pem" ubuntu@<public-ip>
 ```
   - copy the <public-ip> from the aws instance properties
 
+After logging into the instances, follow this script to download necessary dependencies
+
+
+
+
 
