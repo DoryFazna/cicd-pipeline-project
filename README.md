@@ -6,36 +6,38 @@ This project demonstrates how to build a real-world **Corporate DevOps pipeline*
 This project is based on a detailed course, and it's divided into **several key phases** that cover everything from **infrastructure setup** to **monitoring**:
 
 ### Phase 1: Setup Infrastructure (Kubernetes Cluster)
+#### ✅  Configure AWS and create 3 instances
 - **VPC**: Created a **VPC** for hosting the infrastructure.
 - **Security Groups**: Set up necessary **AWS security groups** to allow communication between instances.
 - **EC2 Instances**: Launched 3 **EC2 instances** — **Master**, **Slave-1**, and **Slave-2**.
   - **Master Instance**: For the Kubernetes master node.
   - **Slave-1 & Slave-2 Instances**: For the worker nodes.
 - **Kubernetes Dependencies**: Installed all necessary **Kubernetes dependencies** (e.g., Docker, kubeadm, kubelet, kubectl) on all instances.
+ 
+#### ✅  Security Scan of Kubernetes Cluster
+- Initialized the Kubernetes cluster using kubeadm.
+- Joined worker nodes to the cluster.
+- Verified nodes using kubectl get nodes.
+- Checked basic security configurations and node roles.
+- Ensured the cluster is operational and secured at a basic level.
 
-### Security Scan of Kubernetes Cluster
-- Plan to scan the Kubernetes cluster for potential vulnerabilities and ensure security best practices.
+#### ✅ Create VMs for Jenkins, SonarQube, & Nexus
+- Provisioned 3 separate EC2 instances for:
+  - Jenkins (CI/CD server)
+  - SonarQube (Code quality analysis)
+  - Nexus (Artifact repository)
+- Installed and setup the tools in respective VMs.
 
-### Create VMs for Jenkins, SonarQube, & Nexus
-- Next steps will include provisioning **virtual machines** for **Jenkins**, **SonarQube**, and **Nexus** to enable build automation, code quality analysis, and artifact storage.
-
-### Phase 2: Git Repo Setup
-- Setting up the **Git repository** to store code and manage versioning.
-
-### Configure Jenkins for CI/CD Automation
-- Configuring **Jenkins** for the automation of the build, test, and deployment pipeline.
-
-### CICD Full Stack Pipeline
-- Creating a fully functional **CI/CD pipeline** involving code checkout, build, unit testing, deployment, and integration with **SonarQube** for static code analysis.
-
-### Monitoring
-- Setting up **monitoring** to track the health of the pipeline and infrastructure.
+## Phase 2: Git Repo Setup
+#### ✅ Initialized and pushed project code to a Git repository. (in this tutorial - boardGame project)
 
 ## Current Status:
-- **Phase 1**: VPC, EC2 instances, and Kubernetes dependencies setup are complete.
-- **Next Steps**: 
-  - Set up Kubernetes cluster (init/master node configuration).
-  - Continue with Jenkins and SonarQube integration for CI/CD.
+### 🔄 Phase 3: Configure Jenkins for CI/CD Automation (In Progress)
+Currently working on:
+- Configuring Jenkins.
+- Setting up required plugins and integration with Git repository.
+- Defining initial Jenkins jobs for build and test stages.
+- Preparing to integrate with SonarQube and Nexus in the pipeline.
 
 ---
 
