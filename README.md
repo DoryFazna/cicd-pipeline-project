@@ -1,6 +1,7 @@
 Checkout my blogpost of complete step-by-step explanation : https://connect-ubuntu-as-slave-jenkins.blogspot.com/2025/05/building-production-grade-cicd-pipeline.html
 
 # The Ultimate CICD Corporate DevOps Pipeline Project | Real-Time DevOps Project
+![CI/CD Pipeline](images/self-created-pipeline-diagram.png)
 
 This project demonstrates how to build a real-world **Corporate DevOps pipeline** using **Jenkins**, **Kubernetes**, **SonarQube**, and **Nexus** as part of a comprehensive **CI/CD** workflow. The goal is to create a fully automated and secure **CI/CD pipeline** for corporate environments, integrating code repositories, build automation, continuous testing, and deployment.
 
